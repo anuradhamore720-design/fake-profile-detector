@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result | InstaGuard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<section class="form-section">
+    <div class="card">
+        <h2>Analysis Report</h2>
+        <h3>@{{ username }}</h3>
+
+        <p><strong>Risk Score:</strong> {{ percentage }}%</p>
+
+        <div class="progress-bar">
+            <div class="progress" style="width: {{ percentage }}%;"></div>
+        </div>
+
+        <h3>{{ status }}</h3>
+
+        <br>
+        <a href="/" class="cta-btn">Analyze Another</a>
+    </div>
+</section>
+
+</body>
+</html>
+

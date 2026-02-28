@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>InstaGuard | AI Fake Profile Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="gradient-bg"></div>
+
+<header class="navbar">
+    <div class="logo">InstaGuard</div>
+    <div class="nav-links">
+        <a href="#">Features</a>
+        <a href="#">About</a>
+        <a href="#" class="nav-btn">Login</a>
+    </div>
+</header>
+
+<section class="hero">
+    <h1 class="fade-in">AI Powered Fake Profile Detector</h1>
+    <p class="fade-in-delay">Advanced risk analysis with intelligent scoring system.</p>
+</section>
+
+<section class="form-section">
+    <div class="card fade-up">
+        <h2>Analyze Profile</h2>
+        <form action="/check" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="number" name="followers" placeholder="Followers" required>
+            <input type="number" name="following" placeholder="Following" required>
+            <input type="number" name="posts" placeholder="Posts" required>
+            <textarea name="bio" placeholder="Bio"></textarea>
+            <button type="submit">Analyze Now</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2026 InstaGuard • AI Security Startup
+</footer>
+
+</body>
+</html>
